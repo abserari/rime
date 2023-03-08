@@ -1,3 +1,5 @@
+基于 https://github.com/LufsX/rime
+
 # [Rime](https://blog.isteed.cc/post/rime-2022/)
 
 # 预览
