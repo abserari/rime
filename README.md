@@ -1,4 +1,5 @@
 基于 https://github.com/LufsX/rime
+只是注释了一些私货
 
 # [Rime](https://blog.isteed.cc/post/rime-2022/)
 
