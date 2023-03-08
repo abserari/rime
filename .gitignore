@@ -1,0 +1,10 @@
+
+.DS_Store
+# /*.userdb/ 代表词频是否上传，注意，可能泄漏个人隐私
+/*.userdb/
+/build/
+/rime.wiki/
+/sync/
+/test/
+installation.yaml
+user.yaml
