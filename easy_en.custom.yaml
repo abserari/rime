@@ -1,0 +1,3 @@
+patch:
+  engine/filters:
+    - uniquifier
