@@ -24,9 +24,15 @@ switches:
   - name: emoji_suggestion
     # reset: 1
     states: ["🈚️️", "🈶️"]
+  - name: "english" # 增加了英文单词输入模式
+    states: [ "中打", "英打" ]
+  - name: "fold_comments" # 增加了英文单词输入模式
+    states: [ 展開, 疊起 ] 
+
 
 engine:
   processors:
+    - lua_processor@english_processor # 增加了英文单词输入模式
     - ascii_composer # Windows 用户请解除此行注释，否则将会无法切换到英文输入
     - recognizer
     - lua_processor@select_character_processor # lua 选词扩展，如需关闭请注释
@@ -37,17 +43,20 @@ engine:
     - navigator
     - express_editor
   segmentors:
+    - lua_segmentor@english_segmentor # 增加了英文单词输入模式
     - ascii_segmentor
     - matcher
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
   translators:
+    - lua_translator@english_translator # 增加了英文单词输入模式
     - punct_translator
     - lua_translator@date_translator # 动态日期时间输入
     - table_translator@custom_phrase # 用户自定义词典
     - script_translator
   filters:
+    - lua_filter@english_filter # 增加了英文单词输入模式
     - simplifier@emoji_suggestion
     - lua_filter@long_phrase_first # 最长词组和单字在先
     # - lua_filter@single_char_first # 单字优先
