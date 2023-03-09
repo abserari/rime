@@ -4,7 +4,3 @@
 [submodule "lua/english"] # 增加了英文单词输入模式
 	path = lua/english
 	url = https://github.com/shewer/rime-english
-  
-[submodule "plugins/rime-easy-en"]
-	path = plugins/rime-easy-en
-	url = https://github.com/BlindingDark/rime-easy-en

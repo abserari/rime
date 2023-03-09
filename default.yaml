@@ -12,7 +12,6 @@ schema_list:
   - schema: cangjie5
   - schema: stroke
   - schema: terra_pinyin
-  - schema: easy_en
 
 switcher:
   caption: 〔方案選單〕
