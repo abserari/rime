@@ -1,6 +1,0 @@
-[submodule "lua/tools"] # 增加了英文单词输入模式
-	path = lua/tools
-	url = https://github.com/shewer/librime-lua-tools
-[submodule "lua/english"] # 增加了英文单词输入模式
-	path = lua/english
-	url = https://github.com/shewer/rime-english
